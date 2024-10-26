@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LanguageSelection from "./components/LanguageSelection";
 import PersonalitySelection from "./components/PersonalitySelection";
 import Categories from "./components/Categories";
