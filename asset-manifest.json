@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shopping-assistant/static/css/main.51f5c266.css",
+    "main.js": "/shopping-assistant/static/js/main.3cbcb2bf.js",
+    "static/media/seafood.jpg": "/shopping-assistant/static/media/seafood.39142c0390f0a903b094.jpg",
+    "static/media/pasta.jpg": "/shopping-assistant/static/media/pasta.90544506314b60bf1bf0.jpg",
+    "static/media/vegies.jpg": "/shopping-assistant/static/media/vegies.ac115999277d43c91082.jpg",
+    "static/media/fruit.jpg": "/shopping-assistant/static/media/fruit.e51f9d95bfefd3402c3f.jpg",
+    "static/media/milk.jpg": "/shopping-assistant/static/media/milk.31104f3cda7a86fb150a.jpg",
+    "static/media/meat.jpg": "/shopping-assistant/static/media/meat.1c500cd3698dca86a701.jpg",
+    "static/media/shoping-robot.png": "/shopping-assistant/static/media/shoping-robot.40983826acfd475f4077.png",
+    "static/media/robot.png": "/shopping-assistant/static/media/robot.3def73b82eda419fbf88.png",
+    "static/media/friendly.png": "/shopping-assistant/static/media/friendly.f688e8f52d9e1402ae6c.png",
+    "static/media/trendy.png": "/shopping-assistant/static/media/trendy.554cc2538d693b57a210.png",
+    "static/media/practical.png": "/shopping-assistant/static/media/practical.137d04bc08890873793f.png",
+    "index.html": "/shopping-assistant/index.html",
+    "main.51f5c266.css.map": "/shopping-assistant/static/css/main.51f5c266.css.map",
+    "main.3cbcb2bf.js.map": "/shopping-assistant/static/js/main.3cbcb2bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51f5c266.css",
+    "static/js/main.3cbcb2bf.js"
+  ]
+}
