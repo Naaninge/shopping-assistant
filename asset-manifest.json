@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-assistant/static/css/main.41ef4083.css",
+    "main.css": "/shopping-assistant/static/css/main.7d2d48cb.css",
     "main.js": "/shopping-assistant/static/js/main.494f67f6.js",
     "static/media/seafood.jpg": "/shopping-assistant/static/media/seafood.39142c0390f0a903b094.jpg",
     "static/media/pasta.jpg": "/shopping-assistant/static/media/pasta.90544506314b60bf1bf0.jpg",
@@ -14,11 +14,11 @@
     "static/media/trendy.png": "/shopping-assistant/static/media/trendy.554cc2538d693b57a210.png",
     "static/media/practical.png": "/shopping-assistant/static/media/practical.137d04bc08890873793f.png",
     "index.html": "/shopping-assistant/index.html",
-    "main.41ef4083.css.map": "/shopping-assistant/static/css/main.41ef4083.css.map",
+    "main.7d2d48cb.css.map": "/shopping-assistant/static/css/main.7d2d48cb.css.map",
     "main.494f67f6.js.map": "/shopping-assistant/static/js/main.494f67f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.41ef4083.css",
+    "static/css/main.7d2d48cb.css",
     "static/js/main.494f67f6.js"
   ]
 }
