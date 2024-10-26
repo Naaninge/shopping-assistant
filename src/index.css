@@ -142,16 +142,18 @@ margin-top: 1rem;
 .categories{
     padding: 2rem;
      text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
 .category-container{
     display: grid;
-    place-content: center;
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 160px;
     gap: 0.5rem;
     padding: 1rem 0;
-    width: 60%;
+    width: 100%;
 
 }
 
@@ -189,19 +191,19 @@ margin-top: 1rem;
 
 .chat-container {
     width: 100%;
-    margin: 0 auto;
-    margin: 2rem;
+    margin: 2rem ;
   
 }
 
 .chat-input {
     display: flex;
-    padding: 10px;
+   
+    padding: 10px ;
 }
 
 .input-field {
     flex: 1;
-    padding: 10px;
+    padding: 10px ;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
@@ -223,11 +225,12 @@ margin-top: 1rem;
     transition: background-color 0.3s;
 }
 
-
-
-
-.guides .options button{
-  margin: 0.5rem;
+.guides .options {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  
 }
 
 .food-title{
