@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary: rgb(214, 251, 189);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+button {
+  background-color: var(--primary);
+  border: none;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+p {
+  color: gray;
+  font-size: 0.75rem;
+ 
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+  height: 100vh;
+  text-align: center;
+  
+}
+
+
+.home button {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home .image {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  
+}
+
+.home h2{
+    margin-bottom: 10px;
+}
+
+.home .button {
+  margin-top: 150px;
+}
+
+
+/* language  Selection Page*/
+
+.language {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radiobtns {
+margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.radiobtns div {
+  padding: 0.5rem;
+}
+
+.radiobtns div input{
+    margin-right: 0.5rem;
+}
+
+.language button {
+  margin-top: 1rem;
+  border-radius: 8px;
+  
+}
+
+/* Personality Page */
+
+.personalities{
+    padding: 2rem;
+    display: grid;
+    place-content: center;
+
+}
+
+.personalities > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 2rem  0;
+}
+
+.personalities > div section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.personalities div section img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+   margin: 0 1rem;
+    
+}
+
+/* categories */
+.categories{
+    padding: 2rem;
+     text-align: center;
+}
+
+.category-container{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 160px;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    width: 60%;
+
+}
+
+.category {
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 4px;
+  
+
+}
+
+.category img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+}
+
+/* Guides */
+
+.guides
+{
+  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guides h2{
+  padding-bottom: 2rem;
+}
+
+
+
+.chat-container {
+    width: 100%;
+    margin: 0 auto;
+    margin: 2rem;
+  
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input-field:focus {
+    border-color: var(--primary);
+}
+
+.send-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+
+.guides .options button{
+  margin: 0 0.5rem;
+}
+
+.food-title{
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.food-title  h2{
+  padding: 2rem 0;
+}
+
