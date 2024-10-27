@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import robot from '../images/robot.png'
 import shopRobot from '../images/shoping-robot.png'
 
 
@@ -9,7 +8,7 @@ const Home = () => {
     <div className="home ">
       {/*image  */}
       <div className="image">
-        <img src={shopRobot} alt="image" />
+        <img src={shopRobot} alt="shopping robot" />
       </div>
       <h2>
         Hi there! I'm your sustainable food guide. Let's find some delicious and
@@ -21,7 +20,7 @@ const Home = () => {
       </p>
       <div className="button">
         <Link to="/language-selection">
-          <button>Get Started!</button>
+          <button >Get Started!</button>
         </Link>
 
         <p>Ready to shop sustainably? Let's begin</p>
