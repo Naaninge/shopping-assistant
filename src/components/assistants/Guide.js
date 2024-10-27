@@ -1,23 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Chatbot from "../../ChatBot";
 
-const Guide = ({title,firstBtnTitle,secondBtnTitle}) => {
+const Guide = ({title,firstBtnTitle,secondBtnTitle,language,personality,initialMessage}) => {
   return (
     <div className="guides">
       <div className="title">
         <h2>{title}</h2>
       </div>
-      <div className="chat-container">
-        <div className="chat-input">
-          <input
-            type="text"
-            name="prompt"
-            id="prompt"
-            placeholder="Type your message... "
-            className="input-field"
-          />
-          <button class="send-button">Send</button>
-        </div>
+      <div >
+        <Chatbot  language={language} personality={personality} initialMessage={initialMessage}></Chatbot>
       </div>
       <div className="options">
         <button>{firstBtnTitle}</button>

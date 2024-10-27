@@ -8,6 +8,8 @@ const TrendyGuide = () => {
         title=" Hi! I’m your Trendy Advisor!"
         firstBtnTitle="What's New"
         secondBtnTitle="Limited Finds"
+        language="English"
+        personality="trendy advisor"
       ></Guide>
     </div>
   );

@@ -190,60 +190,54 @@ margin-top: 1rem;
   padding-bottom: 2rem;
 }
 
-
-
-.chat-container {
-    width: 100%;
-    margin: 2rem ;
-  
-}
-
-.chat-input {
-    display: flex;
-   
-    padding: 10px ;
-}
-
-.input-field {
-    flex: 1;
-    padding: 10px ;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: border 0.3s;
-}
-
-.input-field:focus {
-    border-color: var(--primary);
-}
-
-.send-button {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
 .guides .options {
   
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  padding-top: 1.5rem;
   
 }
 
-.food-title{
+.food{
   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
 
-.food-title  h2{
+.food  h2{
   padding: 2rem 0;
 }
 
+.food > div{
+  display:grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-auto-rows: 200px;
+   align-content: center;
+   gap: 1rem;
+   padding: 1rem 0;
+}
+
+
+.food-item{
+  flex: 1;
+  border: 1px solid gray ;
+  padding: 1rem;
+  text-align: center;
+
+}
+.food-item img{
+    width: 200px;
+    height: 100px;
+
+}
+
+
+/* chatbot */
+
+.chatbot{
+  position: relative;
+  height: 60vh;
+  width: 90vw;
+}
