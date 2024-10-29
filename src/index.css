@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-  --primary: #d6fbbd;
+  --primary-color: #c6e3fa;
+  --seconday-color: #6ea9d7;
 }
 
 *,
@@ -12,13 +13,13 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 button {
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   border: none;
   padding: 0.5rem 2rem;
   cursor: pointer;
@@ -28,7 +29,6 @@ button {
 p {
   color: gray;
   font-size: 0.75rem;
- 
 }
 a {
   text-decoration: none;
@@ -43,9 +43,7 @@ a {
   padding: 2rem;
   height: 100vh;
   text-align: center;
-  
 }
-
 
 .home button {
   width: 100%;
@@ -63,17 +61,15 @@ img {
   height: 200px;
   width: 200px;
   margin: 0 auto;
-  
 }
 
-.home h2{
-    margin-bottom: 10px;
+.home h2 {
+  margin-bottom: 10px;
 }
 
 .home .button {
   margin-top: 150px;
 }
-
 
 /* language  Selection Page*/
 
@@ -85,121 +81,111 @@ img {
 }
 
 .radiobtns {
-margin-top: 1rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  
 }
 
 .radiobtns div {
   padding: 0.5rem;
 }
 
-.radiobtns div input{
-    margin-right: 0.5rem;
+.radiobtns div input {
+  margin-right: 0.5rem;
 }
 
 .language button {
   margin-top: 1rem;
   border-radius: 8px;
-  
 }
 
 /* Personality Page */
 
-.personalities{
-    padding: 2rem;
-    display: grid;
-    place-content: center;
-
+.personalities {
+  padding: 2rem;
+  display: grid;
+  place-content: center;
 }
 
 .personalities > div {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 2rem  0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2rem 0;
 }
 
-.personalities > div .assistant-section{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    height: 100px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.personalities > div .assistant-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  height: 100px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.personalities div .assistant-section img{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-   margin: 0 1rem;
-    
+.personalities div .assistant-section img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 0 1rem;
 }
 
 /* categories */
-.categories{
-    padding: 2rem;
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 100%;
+.categories {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.categories h2{
+.categories h2 {
   padding-bottom: 1rem;
 }
-.category-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 160px;
-    gap: 0.5rem;
-    padding: 1rem ;
-    width: 80%;
-
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 160px;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 80%;
 }
 
 .category {
-    background-color: var(--primary);
-    padding: 1rem;
-    border-radius: 4px;
-  
-
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 4px;
 }
 
-.category img{
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    border-radius: 50%;
-
+.category img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 /* Guides */
 
-.guides
-{
+.guides {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem ;
+  padding-bottom: 2rem;
 }
 
-.container{
-padding: 0 2rem;
-padding-top: 2rem;
-width: 100%;
+.container {
+  padding: 0 2rem;
+  padding-top: 2rem;
+  width: 100%;
 }
 
-.guides h2{
+.guides h2 {
   padding-bottom: 1rem;
 }
 
-.prev{
-
+.prev {
 }
 
 .guides .options {
@@ -207,64 +193,48 @@ width: 100%;
   flex-wrap: wrap;
   gap: 0.5rem;
   padding-top: 1.5rem;
-  
 }
 
-.food{
+.food {
   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   padding: 2rem;
-   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+  text-align: center;
 }
 
-.food  h2{
+.food h2 {
   padding: 2rem 0;
 }
 
-.food > div{
-  display:grid;
-   grid-template-columns: repeat(2,200px);
-   grid-auto-rows: 300px;
-   align-content: center;
-   gap: 1rem;
-   padding: 1rem 0;
+.food > div {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: 260px;
+  align-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
-
-.food-item{
+.food-item {
   flex: 1;
-  border: 2px solid var(--primary) ;
+  border: 2px solid var(--primary-color);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-
 }
-.food-item h3{
+.food-item h3 {
   padding: 1rem 0;
 }
-.food-item img{
-    width: 150px;
-    height: 150px;
-
+.food-item img {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
 }
 
-
-/* chatbot */
-
-/* .chatbot{
-  position: relative;
-  height: 60vh;
-  width: 80vw;
-} */
-
-.message-input, .message{
-  background-color: var(--primary);
+.message-input,
+.message {
+  background-color: var(--primary-color);
 }
-
-  #radioBtns{
-            accent-color: green;
-            
-        }

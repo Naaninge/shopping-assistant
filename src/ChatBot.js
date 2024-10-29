@@ -11,8 +11,9 @@ import {
   MessageInput,
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
+import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+
 
 function Chatbot({ language, personality, initialMessage }) {
   const [messages, setMessages] = useState([
@@ -43,52 +44,31 @@ function Chatbot({ language, personality, initialMessage }) {
     await processMessageToChatGPT(newMessages);
   };
 
+ 
+
   async function processMessageToChatGPT(chatMessages) {
-    let apiMessages = chatMessages.map((messageObject) => {
-      let role = "";
-      if (messageObject.sender === "ChatGPT") {
-        role = "assistant";
-      } else {
-        role = "user";
-      }
+    const apiMessages = chatMessages.map((messageObject) => ({
+      sender: messageObject.sender,
+      message: messageObject.message,
+    }));
 
-      return { role: role, content: messageObject.message };
-    });
-
-    const systemMessage = {
-      role: "system",
-      content: `Respond to the user in ${language} as a ${personality} shopping assistant.`,
-    };
-
-    const apiRequestBody = {
-      model: "gpt-3.5-turbo",
-      messages: [
-        systemMessage,
-        ...apiMessages, // The messages from our chat with ChatGPT
-      ],
-    };
-
-    await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: "Bearer " + API_KEY,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(apiRequestBody),
-    })
-      .then((data) => {
-        return data.json();
-      }).then((data) => {
-        setMessages([
-          ...chatMessages,
-          { message: data.choices[0].message.content, sender: "ChatGPT" },
-        ]);
-        setTyping(false);
+    try {
+      const response = await axios.post("http://localhost:5000/api/chat", {
+        messages: apiMessages,
+        language,
+        personality,
       });
+
+      setMessages([
+        ...chatMessages,
+        { message: response.data.message, sender: "ChatGPT" },
+      ]);
+      setTyping(false);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   }
-
      
-
 
   return (
     <div style={{ position: "relative", height: "60vh", width: "95vw" }}>

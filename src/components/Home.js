@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import shopRobot from '../images/shoping-robot.png'
+import robot from '../images/robot.png'
 
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home ">
       {/*image  */}
       <div className="image">
-        <img src={shopRobot} alt="shopping robot" />
+        <img src={robot} alt="shopping robot" />
       </div>
       <h2>
         Hi there! I'm your sustainable food guide. Let's find some delicious and
