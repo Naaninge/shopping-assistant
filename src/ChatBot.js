@@ -53,11 +53,14 @@ function Chatbot({ language, personality, initialMessage }) {
     }));
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chat", {
-        messages: apiMessages,
-        language,
-        personality,
-      });
+      const response = await axios.post(
+        "https://shopping-assistant-server.onrender.com/api/chat",
+        {
+          messages: apiMessages,
+          language,
+          personality,
+        }
+      );
 
       setMessages([
         ...chatMessages,
