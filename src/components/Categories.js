@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import fruit from '../images/fruit.jpg'
 import vegies from '../images/vegies.jpg'
-import milk from '../images/milk.jpg'
 import meat from '../images/meat.jpg'
 import seafood from '../images/seafood.jpg'
 import pasta from '../images/pasta.jpg'
@@ -14,40 +13,43 @@ const Categories = () => {
     <div className="categories">
       <h2>Categories</h2>
       <div className="category-container">
-
-          <div className="category">
-        <Link to="/fruits">
-            <img src={fruit} alt="fruits" />
+        <div className="category">
+          <img src={fruit} alt="fruits" />
+          <Link to="/fruits">
             <h4>Fruits</h4>
-        </Link>
-          </div>
-        
-          <div className="category">
+          </Link>
+        </div>
+
+        <div className="category">
+          <img src={vegies} alt="" />
           <Link to="/vegetables">
-            <img src={vegies} alt="" />
-          <h4>Vegetables</h4>
-           </Link>
-          </div>
-       
-        
+            <h4>Vegetables</h4>
+          </Link>
+        </div>
+
         <div className="category">
           <img src={meat} alt="" />
-          <h4>Meat</h4>
+          <Link to="/meat">
+            <h4>Meat</h4>
+          </Link>
         </div>
         <div className="category">
           <img src={pasta} alt="" />
-          <h4>Pantry</h4>
+          <Link to="/pantry">
+            <h4>Pantry</h4>
+          </Link>
         </div>
-        <div className="category">
-          <img src={milk} alt="" />
-          <h4>Dairy</h4>
-        </div>
+
         <div className="category">
           <img src={seafood} alt="" />
-          <h4>Seafood</h4>
+          <Link to="/seafood">
+            <h4>Seafood</h4>
+          </Link>
         </div>
       </div>
-      
+      <Link to="/personality-selection">
+        <button>Previous</button>
+      </Link>
     </div>
   );
 }

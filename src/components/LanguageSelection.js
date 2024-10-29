@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
+import { LanguageContext } from '../LanguageContext';
 
 const LanguageSelection = () => {
 
-    const [selectedLanguage, setSelectedLanguage] = useState('')
+    const {selectedLanguage, setSelectedLanguage }= useContext(LanguageContext)
     
     const handleLanguageChange = (event) => {
         setSelectedLanguage(event.target.value)
+        console.log(selectedLanguage)
     }
   return (
     <div className="language">
@@ -17,6 +19,7 @@ const LanguageSelection = () => {
             <input
               type="radio"
               value="English"
+              id="radioBtns"
               checked={selectedLanguage === "English"}
               onChange={handleLanguageChange}
             />
@@ -29,6 +32,7 @@ const LanguageSelection = () => {
             <input
               type="radio"
               value="Afrikaans"
+              id="radioBtns"
               checked={selectedLanguage === "Afrikaans"}
               onChange={handleLanguageChange}
             />
@@ -41,6 +45,7 @@ const LanguageSelection = () => {
             <input
               type="radio"
               value="Oshiwambo"
+              id="radioBtns"
               checked={selectedLanguage === "Oshiwambo"}
               onChange={handleLanguageChange}
             />

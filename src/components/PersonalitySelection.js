@@ -1,53 +1,66 @@
-import React from 'react'
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import friendly from '../images/friendly.png'
-import trendy from '../images/trendy.png'
-import practical from '../images/practical.png'
+import friendly from "../images/friendly.png";
+import trendy from "../images/trendy.png";
+import practical from "../images/practical.png";
+import translations from "../translations";
+import { LanguageContext } from "../LanguageContext";
+import { AssistantContext } from "../AssistantContext";
+
+import { useNavigate } from "react-router-dom";
 
 const PersonalitySelection = () => {
+  const { selectedLanguage } = useContext(LanguageContext);
+  const { setSelectedAssistant } = useContext(AssistantContext)
+  
+   const navigate = useNavigate()
+
+  const handleClick = (personality) => {
+    navigate('/assistant')
+    setSelectedAssistant(personality)
+  }
+
+   const translation =
+     translations.assistantSelectionPage[selectedLanguage]||
+    translations.assistantSelectionPage.English;
   return (
     <div className="personalities">
-      
-      <h2>Choose Your Shopping Assistant Personality</h2>
-      <p>Select a personality that best fits your shopping style and needs</p>
-
+      <h2>{translation.title}</h2>
+      <p>{translations.description}</p>
       <div>
-        <section>
-          <img src={practical} alt="" />
+        <button className="assistant-section" onClick={()=>handleClick("PriceAdvisor")}>
+          <img src={practical} alt={translation.practical.title} />
           <div>
-            <Link to='/practical-guide'>
-              {" "}
-              <h3>Practical Price Assistant</h3>
-            </Link>
+            <h3>{translation.practical.title}</h3>
 
-            <p>focused on find the best deals</p>
+            <p>{translation.practical.description}</p>
           </div>
-        </section>
+        </button>
 
-        <section>
-          {/* image */}
-          <img src={friendly} alt="" />
+        <button className="assistant-section" onClick={ ()=>handleClick("FriendlyAdvisor")}>
+          <img src={friendly} alt={translation.friendly.title} />
           <div>
-            <Link to="/friendly-guide">
-            <h3>Friendly Assistant</h3>
-            </Link>
-            <p>Always ready to offer helpful advice and suggestions</p>
+            <h3>{translation.friendly.title}</h3>
+
+            <p>{translation.friendly.description}</p>
           </div>
-        </section>
-        <section>
-          {/* image */}
-          <img src={trendy} alt="" />
+        </button>
+
+        <button className="assistant-section" onClick={()=>handleClick("TrendyAdvisor")}>
+          <img src={trendy} alt={translation.trendy.title} />
           <div>
-            <Link to='/trendy-guide'>
-            <h3>Trendy Assistant</h3>
-            </Link>
-            <p>keeps you updated with the latest trends and styles</p>
+            <h3>{translation.trendy.title}</h3>
+
+            <p>{translation.trendy.description}</p>
           </div>
-        </section>
+        </button>
       </div>
 
+      <Link to="/language-selection">
+        <button>{translation.previous}</button>
+      </Link>
     </div>
   );
-}
+};
 
-export default PersonalitySelection
+export default PersonalitySelection;

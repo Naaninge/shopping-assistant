@@ -3,36 +3,45 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LanguageSelection from "./components/LanguageSelection";
 import PersonalitySelection from "./components/PersonalitySelection";
 import Categories from "./components/Categories";
-import PracticalGuide from "./components/assistants/PracticalGuide";
-import FriendlyGuide from "./components/assistants/FriendlyGuide";
-import TrendyGuide from "./components/assistants/TrendyGuide";
 import Fruits from "./components/categories/Fruits";
 import Vegetables from "./components/categories/Vegetables";
+import Meat from "./components/categories/Meat";
+import Seafood from "./components/categories/Seafood";
+import Pantry from "./components/categories/Pantry";
+import { LanguageProvider } from "./LanguageContext";
+import { AssistantProvider } from "./AssistantContext";
+import Assistant from "./components/assistants/Assistant";
+
 import Chatbot from "./ChatBot";
 
 function App() {
   return (
     <div className="App ">
-      <Router>
-        <Routes>
-          <Route path="/" Component={Home}></Route>
-          <Route
-            path="language-selection"
-            Component={LanguageSelection}
-          ></Route>
-          <Route
-            path="personality-selection"
-            Component={PersonalitySelection}
-          ></Route>
-          <Route path="categories" Component={Categories}></Route>
-          <Route path="practical-guide" Component={PracticalGuide}></Route>
-          <Route path="friendly-guide" Component={FriendlyGuide}></Route>
-          <Route path="trendy-guide" Component={TrendyGuide}></Route>
-          <Route path="fruits" Component={Fruits}></Route>
-          <Route path="vegetables" Component={Vegetables}></Route>
-          <Route path="chatBot" Component={Chatbot}></Route>
-        </Routes>
-      </Router>
+      <LanguageProvider>
+        <AssistantProvider>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route
+                path="language-selection"
+                element={<LanguageSelection />}
+              />
+              <Route
+                path="personality-selection"
+                element={<PersonalitySelection />}
+              />
+              <Route path="categories" element={<Categories />} />
+              <Route path="fruits" element={<Fruits />} />
+              <Route path="vegetables" element={<Vegetables />} />
+              <Route path="chatBot" element={<Chatbot />} />
+              <Route path="meat" element={<Meat />} />
+              <Route path="seafood" element={<Seafood />} />
+              <Route path="pantry" element={<Pantry />} />
+              <Route path="assistant" element={<Assistant />}></Route>
+            </Routes>
+          </Router>
+        </AssistantProvider>
+      </LanguageProvider>
     </div>
   );
 }
