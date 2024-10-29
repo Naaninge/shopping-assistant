@@ -42,19 +42,19 @@ const translations = {
       description:
         "Shanga omunambele ogwa landula oshiponga shoye shokushopa neevi olye wa tokola",
       practical: {
-        title: "Omwanambele gwopooma gwepangelo",
-        description:
-          "Oshilongo omolwa etungo lyoopangelokumwe ndjoka ya tokola",
+        title: "Omukwathi mOondando Dhi Li Nawa",
+        description: "Okutala kIilandomwa Yi Na Oondando Dhi Li Nawa",
       },
       friendly: {
-        title: "Omwanambele gwaashiwana",
-        description: "Kashiime okweha iiyugule neevi olye wa hala",
+        title: "Omukwathi Omunambili",
+        description:
+          "Ngoka Alushe A Pyakudhukwa Okugandja Omadhilaadhilo nOmayele",
       },
       trendy: {
-        title: "Omwanambele gwoomupya",
-        description: "Kashiime oku ulika omalaka nopaalela omape",
+        title: "Omukwathi E Na Ontseyo yIilandomwa yOpethimbo",
+        description: "Ngoka alushe te ku pe omayele gopethimbo ",
       },
-      previous: "Osha pititho",
+      previous: "Shuna kEpandja lya za ko",
     },
   },
 
@@ -77,18 +77,17 @@ const translations = {
       previous: "Vorige",
     },
     Oshiwambo: {
-      title: "Omwanambele gwopooma gwepangelo",
-      welcomeMessage:
-        "Walelepo! Ndi ka ku vulu oku kwathela omolweyi omalunduluko ngaaka.",
-      buttonOne: "Iipumbiwa Yopombanda",
-      buttonTwo: "Iipangelokumwe yeuopangwa",
-      foodCategories: "Iifutungulu Yoku Liimbulwa",
-      previous: "Osha pititho",
+      title: "Omukwathi mOondando Dhi Li Nawa",
+      welcomeMessage: "Otandi ku kwathele ngiini noondando oombwanawa nena?",
+      buttonOne: "Oondando dhi li nawa",
+      buttonTwo: "Eco Deals",
+      foodCategories: "IIkulya yayooloka",
+      previous: "Shuna kEpandja lya za ko",
     },
   },
   FriendlyAdvisor: {
     English: {
-      title: "Practical Price Consultant",
+      title: "Friendly Consultant",
       welcomeMessage: "Hey! I’m your Friendly Advisor!",
       buttonOne: "Ask Help",
       buttonTwo: "Local Picks",
@@ -104,12 +103,12 @@ const translations = {
       previous: "Vorige",
     },
     Oshiwambo: {
-      title: "Ombweya gwopooma",
-      welcomeMessage: "Onghai! Ndi nawaandje opo ndi ku kwathe!",
-      buttonOne: "Tseya Unkeni",
-      buttonTwo: "Okathitha Komutumba",
+      title: "Omukwathi Omunambili",
+      welcomeMessage: "Hallo, ngame omugandjimayele gwoye!",
+      buttonOne: "Pula Ekwatho ",
+      buttonTwo: "Iilandomwa yOmoshilongo",
       foodCategories: "Iifutungulu Yoku Liimbulwa",
-      previous: "Osha pititho",
+      previous: "Shuna kEpandja lya za ko",
     },
   },
   TrendyAdvisor: {
@@ -130,12 +129,12 @@ const translations = {
       previous: "Vorige",
     },
     Oshiwambo: {
-      title: "Trendy Advisor",
-      welcomeMessage: "Onghai! Ndi nawaandje opo ndi ku Trendy Advisor!",
-      buttonOne: "Oshikukutu shomutumba",
-      buttonTwo: "Omapanda gookaholo",
-      foodCategories: "Iifutungulu Yoku Liimbulwa",
-      previous: "Osha pititho",
+      title: "Omukwathi E Na Ontseyo yIilandomwa yOpethimbo",
+      welcomeMessage: "Hallo, ngame omugandjimayele gwoye!",
+      buttonOne: "Pula Ekwatho ",
+      buttonTwo: "Iilandomwa yOmoshilongo",
+      foodCategories: "IIkulya yayooloka",
+      previous: "Shuna kEpandja lya za ko",
     },
   },
 };
